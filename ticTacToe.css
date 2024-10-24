@@ -363,23 +363,23 @@ html, body{
     }
 
     #container{
-        height: 300px;
-        width: 300px;
+        height: 306px;
+        width: 306px;
         background-color: rgba(0,255,255,.8);
-        border: 10px solid rgba(0,255,255,.1);
+        border: 5px solid rgba(0,255,255,.1);
         box-shadow: 0px 0px 50px 10px;
     }
 
     #boxes {
-        height: 310px;
-        width: 310px;
-        gap:9px;
+        height: 306px;
+        width: 306px;
+        gap:3px;
     }
 
     #boxes div{
 
-        height: 94px;
-        width: 94px;
+        height: 100px;
+        width: 100px;
         font-size: 80px;
     }
 }
