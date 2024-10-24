@@ -1,0 +1,385 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin:0px;
+    position: relative;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+
+#homePage{
+    top:0;
+    left:0;
+    right:0;
+    margin: 0px;
+    background-image: url("https://i.pinimg.com/originals/5b/df/d6/5bdfd6a360e0b56427d442015acbf9b8.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hpCenter{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 60%,
+    rgba(245,245,245,.1),
+     rgba(0,0,0,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap:15%
+}
+
+#pickYourTurn{
+    margin: 0px 5%;
+    color:white;
+    border: 5px solid rgba(100,150,200,0);
+    background: rgba(100,150,200,.7);
+    box-shadow: 0px 0px 40px 20px;
+    padding: 0% 5%;
+    border-radius: 40px;
+    color:rgba(100,150,200,.9);
+}
+
+#pickYourTurn h2{
+    color:white;
+}
+
+#pieces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    height: 20%;
+    gap: 5%;
+}
+
+#pieces div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#xPiece, #oPiece{
+ 
+    background: rgba(100,150,200,.7);
+    border-radius: 30px;
+
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#xPiece:hover, #oPiece:hover{
+    box-shadow: 0px 0px 50px 20px;
+    cursor: pointer;
+}
+#or{
+    font-size: 30px;
+}
+
+
+
+#bricks{    
+    background-image: url("https://www.shutterstock.com/shutterstock/videos/1104517919/thumb/1.jpg?ip=x480");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: none;
+
+}
+#brickShadow{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(50% 60%,
+    rgba(245,245,245,.1),
+     rgba(0,0,0,1));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap:3%;
+}
+
+#header{
+    padding: 3%;
+    height: 100px;
+    width: 50%;
+    font-size: 300%;
+    color: rgba(0,255,255,.8);;
+    text-shadow: 0px 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#container{
+    height: 470px;
+    width: 470px;
+    background-color: rgba(0,255,255,.8);
+    border: 10px solid rgba(0,255,255,.1);
+    box-shadow: 0px 0px 40px 20px;
+
+    color:rgba(0,255,255,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxes {
+    position: relative;
+    background-color: rgba(0,255,255,.1);
+    height: 470px;
+    width: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap:10px;
+}
+#boxes div{
+    color: rgba(0,255,255,.8);
+    text-shadow: 0px 0px 5px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,.7);
+    height: 150px;
+    width: 150px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+
+#reviewSteps{
+    background-color: transparent;
+    height: 160px;
+    width: 305px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+#undoRedo{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 20px
+}
+#undo, #redo{
+    padding: 10px 30px;
+    background-color: rgba(0,0,0,1);
+    border: 5px solid rgba(0,255,255,.8);
+    border-radius: 40px;
+    color: rgba(0,255,255,.8);
+    font-size: 120%;
+}
+#undo:hover, #redo:hover, #reset:hover, #restart:hover, #review:hover{
+    cursor: pointer;
+}
+
+
+#reset{
+    background-color: rgba(0,0,0,1);
+    border: 5px solid rgba(0,255,255,.8);
+    border-radius: 40px;
+    color: rgba(0,255,255,.8);
+    font-size: 170%;
+    width: 80%;
+    padding: 10px 0px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+#footer{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(20% 60%,
+    rgba(0,0,0,.8),
+    rgba(0,0,0,.8),
+    rgba(0,0,0,.8),
+     rgba(0,0,0,1));
+    color:white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap:10%;
+}
+
+
+#gameResult{
+    color:rgba(0,255,255,.6);
+    border: 5px solid rgba(0,255,255,.1);
+    background-color: rgba(0,255,255,.8);
+    border-radius: 80px;
+    padding:4%;
+    font-size: 50px;
+    box-shadow: 0px 0px 50px 20px;
+    letter-spacing: 10px;
+}
+
+#youWin{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#youLost{
+    color:white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#endGame{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10%;
+}
+
+
+#restart,#review{
+    color:rgba(0,255,255,.6);
+    border: 5px solid rgba(0,255,255,.1);
+    background-color: rgba(0,255,255,.8);
+    border-radius: 40px;
+    padding-inline: 5%;
+
+    box-shadow: 0px 0px 50px 20px;
+}
+#restart p,#review p{
+    font-size: 30px;
+    color:white;
+}
+
+@media (max-width: 550px) {
+
+    #pickYourTurn{
+        outline: none;
+    }
+
+    #pickYourTurn h2{
+        font-size: 45px;
+    }
+
+    #xPiece, #oPiece{
+        border-radius: 10px;
+    }
+
+
+    #container{
+        height: 370px;
+        width: 370px;
+    }
+
+    #boxes {
+        height: 370px;
+        width: 370px;
+    }
+
+    #boxes div{
+
+        height: 116px;
+        width: 116px;
+        font-size: 100px;
+    }
+
+    #gameResult div{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 470px) {
+
+    #pickYourTurn{
+        padding: 10px;
+    }
+
+    #pickYourTurn h2{
+        font-size: 35px;
+    }
+
+    #pieces{
+        width: 70%;
+    }
+
+    #xPiece, #oPiece{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    #container{
+        height: 300px;
+        width: 300px;
+        background-color: rgba(0,255,255,.8);
+        border: 10px solid rgba(0,255,255,.1);
+        box-shadow: 0px 0px 50px 10px;
+    }
+
+    #boxes {
+        height: 310px;
+        width: 310px;
+        gap:9px;
+    }
+
+    #boxes div{
+
+        height: 94px;
+        width: 94px;
+        font-size: 80px;
+    }
+}
